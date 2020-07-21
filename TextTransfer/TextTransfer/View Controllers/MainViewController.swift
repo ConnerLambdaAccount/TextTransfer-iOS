@@ -15,10 +15,13 @@ class MainViewController: UIViewController {
     // MARK: - Properties
     var receiverDelegate: ReceiverInfoDelegate!
     var receiverInfo = ReceiverInfo(ip: nil, port: nil)
+    let networkController = NetworkController()
 
     // MARK: - IBActions
     @IBAction func sendButtonTapped(_ sender: Any) {
         guard let text = inputTV.text, !text.isEmpty, let ip = receiverInfo.ip, let port = receiverInfo.port else { return }
+        print("Sending...")
+        networkController.sendTextToServer(text, receiverInfo)
     }
     
     // MARK: - View Lifecycle

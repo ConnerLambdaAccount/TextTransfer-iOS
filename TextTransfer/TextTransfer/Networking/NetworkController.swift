@@ -22,7 +22,5 @@ class NetworkController {
 }
 
 extension NetworkController: WebSocketDelegate {
-    func didReceive(event: WebSocketEvent, client: WebSocket) {
-        
-    }
+    func didReceive(event: WebSocketEvent, client: WebSocket) {}
 }
