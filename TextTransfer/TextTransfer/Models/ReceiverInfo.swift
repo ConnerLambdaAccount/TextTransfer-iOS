@@ -7,6 +7,6 @@
 //
 
 struct ReceiverInfo {
-    var ip: String
-    var port: Int
+    var ip: String?
+    var port: Int?
 }
