@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		13F3576C24AFB7F90092200C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3576B24AFB7F90092200C /* AppDelegate.swift */; };
 		13F3576E24AFB7F90092200C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3576D24AFB7F90092200C /* SceneDelegate.swift */; };
-		13F3577024AFB7F90092200C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3576F24AFB7F90092200C /* ViewController.swift */; };
 		13F3577324AFB7F90092200C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F3577124AFB7F90092200C /* Main.storyboard */; };
 		13F3577524AFB7FB0092200C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F3577424AFB7FB0092200C /* Assets.xcassets */; };
-		13F3577824AFB7FB0092200C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F3577624AFB7FB0092200C /* LaunchScreen.storyboard */; };
+		13F3578224AFB9DB0092200C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3578124AFB9DB0092200C /* MainViewController.swift */; };
+		13F3578424AFEFBD0092200C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3578324AFEFBD0092200C /* SettingsViewController.swift */; };
+		13F3578624AFFBEF0092200C /* ReceiverInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3578524AFFBEF0092200C /* ReceiverInfo.swift */; };
+		A734EE9E07A50C13CA89507C /* Pods_TextTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579F13664B994812F3798EA3 /* Pods_TextTransfer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13F3576824AFB7F90092200C /* TextTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F3576B24AFB7F90092200C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13F3576D24AFB7F90092200C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13F3576F24AFB7F90092200C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13F3577224AFB7F90092200C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13F3577424AFB7FB0092200C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		13F3577724AFB7FB0092200C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13F3577924AFB7FB0092200C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F3578124AFB9DB0092200C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		13F3578324AFEFBD0092200C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		13F3578524AFFBEF0092200C /* ReceiverInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverInfo.swift; sourceTree = "<group>"; };
+		1B46ADA1FB34CDBD1A84B483 /* Pods-TextTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextTransfer.debug.xcconfig"; path = "Target Support Files/Pods-TextTransfer/Pods-TextTransfer.debug.xcconfig"; sourceTree = "<group>"; };
+		579F13664B994812F3798EA3 /* Pods_TextTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3366C62F77504D299C0E6C2 /* Pods-TextTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextTransfer.release.xcconfig"; path = "Target Support Files/Pods-TextTransfer/Pods-TextTransfer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A734EE9E07A50C13CA89507C /* Pods_TextTransfer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				13F3576A24AFB7F90092200C /* TextTransfer */,
 				13F3576924AFB7F90092200C /* Products */,
+				93C7995C7A3BA60985981318 /* Pods */,
+				D5908CD8B19426ED0DFF330A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,57 @@
 		13F3576A24AFB7F90092200C /* TextTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				13F3576B24AFB7F90092200C /* AppDelegate.swift */,
-				13F3576D24AFB7F90092200C /* SceneDelegate.swift */,
-				13F3576F24AFB7F90092200C /* ViewController.swift */,
+				13F3578724AFFBF40092200C /* Models */,
+				13F3578024AFB9C50092200C /* View Controllers */,
+				13F3577F24AFB8310092200C /* Resources */,
 				13F3577124AFB7F90092200C /* Main.storyboard */,
-				13F3577424AFB7FB0092200C /* Assets.xcassets */,
-				13F3577624AFB7FB0092200C /* LaunchScreen.storyboard */,
 				13F3577924AFB7FB0092200C /* Info.plist */,
 			);
 			path = TextTransfer;
+			sourceTree = "<group>";
+		};
+		13F3577F24AFB8310092200C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13F3576B24AFB7F90092200C /* AppDelegate.swift */,
+				13F3576D24AFB7F90092200C /* SceneDelegate.swift */,
+				13F3577424AFB7FB0092200C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		13F3578024AFB9C50092200C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				13F3578124AFB9DB0092200C /* MainViewController.swift */,
+				13F3578324AFEFBD0092200C /* SettingsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		13F3578724AFFBF40092200C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13F3578524AFFBEF0092200C /* ReceiverInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93C7995C7A3BA60985981318 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B46ADA1FB34CDBD1A84B483 /* Pods-TextTransfer.debug.xcconfig */,
+				B3366C62F77504D299C0E6C2 /* Pods-TextTransfer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5908CD8B19426ED0DFF330A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				579F13664B994812F3798EA3 /* Pods_TextTransfer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13F3577C24AFB7FB0092200C /* Build configuration list for PBXNativeTarget "TextTransfer" */;
 			buildPhases = (
+				E539B5AED7E5C0B3D6953DF8 /* [CP] Check Pods Manifest.lock */,
 				13F3576424AFB7F90092200C /* Sources */,
 				13F3576524AFB7F90092200C /* Frameworks */,
 				13F3576624AFB7F90092200C /* Resources */,
@@ -125,7 +177,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13F3577824AFB7FB0092200C /* LaunchScreen.storyboard in Resources */,
 				13F3577524AFB7FB0092200C /* Assets.xcassets in Resources */,
 				13F3577324AFB7F90092200C /* Main.storyboard in Resources */,
 			);
@@ -133,14 +184,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E539B5AED7E5C0B3D6953DF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextTransfer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		13F3576424AFB7F90092200C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13F3577024AFB7F90092200C /* ViewController.swift in Sources */,
+				13F3578224AFB9DB0092200C /* MainViewController.swift in Sources */,
 				13F3576C24AFB7F90092200C /* AppDelegate.swift in Sources */,
 				13F3576E24AFB7F90092200C /* SceneDelegate.swift in Sources */,
+				13F3578424AFEFBD0092200C /* SettingsViewController.swift in Sources */,
+				13F3578624AFFBEF0092200C /* ReceiverInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,14 +231,6 @@
 				13F3577224AFB7F90092200C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		13F3577624AFB7FB0092200C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13F3577724AFB7FB0092200C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -282,6 +352,7 @@
 		};
 		13F3577D24AFB7FB0092200C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B46ADA1FB34CDBD1A84B483 /* Pods-TextTransfer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +370,7 @@
 		};
 		13F3577E24AFB7FB0092200C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3366C62F77504D299C0E6C2 /* Pods-TextTransfer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
