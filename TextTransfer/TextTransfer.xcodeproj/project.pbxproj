@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13BBBD6224C6E2DC00A84AEE /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBBD6124C6E2DC00A84AEE /* NetworkController.swift */; };
 		13F3576C24AFB7F90092200C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3576B24AFB7F90092200C /* AppDelegate.swift */; };
 		13F3576E24AFB7F90092200C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F3576D24AFB7F90092200C /* SceneDelegate.swift */; };
 		13F3577324AFB7F90092200C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F3577124AFB7F90092200C /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13BBBD6124C6E2DC00A84AEE /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		13F3576824AFB7F90092200C /* TextTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F3576B24AFB7F90092200C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13F3576D24AFB7F90092200C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13BBBD6024C6E2C600A84AEE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				13BBBD6124C6E2DC00A84AEE /* NetworkController.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		13F3575F24AFB7F90092200C = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				13F3578724AFFBF40092200C /* Models */,
+				13BBBD6024C6E2C600A84AEE /* Networking */,
 				13F3578024AFB9C50092200C /* View Controllers */,
 				13F3577F24AFB8310092200C /* Resources */,
 				13F3577124AFB7F90092200C /* Main.storyboard */,
@@ -129,6 +140,7 @@
 				13F3576424AFB7F90092200C /* Sources */,
 				13F3576524AFB7F90092200C /* Frameworks */,
 				13F3576624AFB7F90092200C /* Resources */,
+				FE4A83C4F8AE8B93FD5F6572 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +219,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FE4A83C4F8AE8B93FD5F6572 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextTransfer/Pods-TextTransfer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextTransfer/Pods-TextTransfer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextTransfer/Pods-TextTransfer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,6 +245,7 @@
 			files = (
 				13F3578224AFB9DB0092200C /* MainViewController.swift in Sources */,
 				13F3576C24AFB7F90092200C /* AppDelegate.swift in Sources */,
+				13BBBD6224C6E2DC00A84AEE /* NetworkController.swift in Sources */,
 				13F3576E24AFB7F90092200C /* SceneDelegate.swift in Sources */,
 				13F3578424AFEFBD0092200C /* SettingsViewController.swift in Sources */,
 				13F3578624AFFBEF0092200C /* ReceiverInfo.swift in Sources */,

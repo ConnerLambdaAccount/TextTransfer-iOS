@@ -34,6 +34,8 @@ class SettingsViewController: UIViewController {
             !parsedAddr[1].isEmpty,
             let port = Int(parsedAddr[1]) else { return }
         
+        print("\(parsedAddr[0])")
+        print("\(port)")
         // Pass IP and Port to MainViewController
         receiverDelegate.didSetReceiverInfo(ip: parsedAddr[0], port: port)
     }
